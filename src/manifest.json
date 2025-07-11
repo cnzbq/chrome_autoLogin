@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "自动登录工具",
+  "version": "1.0",
+  "description": "检测指定登录页面进行密码填充及点击登录按钮",
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "run_at": "document_end"
+  }]
+}
